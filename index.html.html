@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflexión y Refracción de la Luz</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500&family=Quicksand:wght@500&family=Playfair+Display:wght@600&family=Share+Tech+Mono&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      margin: 0;
+      padding: 20px;
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      color: #003049;
+    }
+
+    .section {
+      background-color: #fff8e1;
+      border-left: 6px solid #ff6f00;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #d62828;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #6a040f;
+    }
+
+    p, li {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 17px;
+    }
+
+    .highlight {
+      background-color: #ffe0e9;
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #9d0208;
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    th, td {
+      border: 2px solid #f77f00;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ffd6a5;
+      color: #370617;
+      font-family: 'Playfair Display', serif;
+    }
+
+    td {
+      background-color: #fff3e0;
+    }
+
+    .note {
+      background-color: #e0f7fa;
+      padding: 10px;
+      border-left: 4px solid #00b4d8;
+      margin-top: 15px;
+      font-weight: bold;
+      font-family: 'Share Tech Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reflexión y Refracción de la Luz</h1>
+    <p><span class="highlight">Luz:</span> forma de energía que viaja en línea recta y puede reflejarse, absorberse o transmitirse.</p>
+  </header>
+
+  <div class="section">
+    <h2>¿Qué son la Reflexión y la Refracción?</h2>
+    <p>Cuando la luz se encuentra con un objeto o medio diferente, puede comportarse de distintas formas: <strong>rebotar</strong> (reflexión), <strong>doblarse</strong> (refracción), <strong>absorberse</strong> o <strong>pasar a través</strong> del objeto (transmisión).</p>
+ </div>
+
+  <div class="section">
+    <h2>Reflexión de la Luz</h2>
+    <p>La <strong>reflexión</strong> ocurre cuando un rayo de luz choca con una superficie lisa y <strong>rebota</strong>. Lo impresionante es que la luz es tan precisa que rebota con el mismo ángulo con el que llega, según la <strong>Ley de la Reflexión</strong>.</p>
+    <div class="note">
+      "Ángulo de incidencia = Ángulo de reflexión"
+    </div>
+ <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEBUQEhAVFRUXFRUWFhUVFhYXEBAQFhcdGBYVGhUZHSggGBoxHRUXITEjJSktLi4uGB8zOTMsNygtLisBCgoKDg0NFhAQGjUdHR03Ny0rKy0tKy0tLSstNysrLS01LS0tLS0tKy0rLzAwKy0tKystKystLS4tKy0tLS0tLf/AABEIAKkBKgMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEDBAUHAgj/xABGEAACAQMCBAIFCAcGBQUBAAABAgMABBESIQUGEzEiQRQyUVTTI0JhcYGRlNIHNVJzkrPRFRYzYpOxNFNyobIXJCVDg0T/xAAaAQEBAQEBAQEAAAAAAAAAAAAAAgEEAwYF/8QALhEBAAECAggEBgMAAAAAAAAAAAECAxFRBAUSEzFhccEUITJBFTNSkaHxIkLw/9oADAMBAAIRAxEAPwCXXVxPwS4eWR5J+HTyFnZiXm4fM57nzMJP3f8AlPredZFV0YMrAMrKcqykZBBHcYpcQK6lHUMrAhlIBVlOxBB2IrnxEnL8ufFJwt27bs/C3Y/eYMn7M/eHRqVat51kVXRgysAVYHKsp7EEdxV2gUpSgUpSgUpSgUpSgUpSgUpSgUpSgifM/wCseG/vJ/5JqWVEuaG/+S4b+8n/AJJqWVFPGp0Xvl2+neVaUpVucpSlApSlApSqE0FaUpQKUpQKUpQK0nMnNdnw5Nd1cLH7F9aV/wDpjXLH68Yrd1xv9K3A4+MXi21hEr3kQJuJ86YIodJ0xSPjeQtjA7jfy7Bi8Q/S5c8QuY7HhcPSMrhBNKA0oB7uE9VQBlt87DyrsltZhEVCzuVUAszNqcgYLHfue9cc/QLyfJDNcXlzEUeMm3jVh4lf/wC44/hUH6WrtlBWrc8KupRlDKwIKkZVlIwQR5irlKDnBEnL0mQGk4U7b92k4bIx7jzMBJ+zP39Ctp1kUOjBlYBlZTlWU7ggjuKrPCrqUYBlYEMpGVZTsQQe4rnjLJy9JlQ8vC5G3G7Pwtye4/ahJPby/wDIOj0q1bTrIiujBlYBlZSCrKRkEEdxV2gjvPPEpYLYejn5d3CoBp1lQC8unX4Q3TRyCwIzpyDmrk3NNvGQuZHHQjuGdI2ZEtpCwWV2AwB8mx9uATjANZd3weKaZZpQJNCMixsA0Sl2BZ9J7t4FGfIZx3NYtryzHHHLGrvpkhMAG2IodcrKqbbAdcqB5BVFBav+craAMz9QopkUyrGzQl4kaSRQ42JAjb6MgjuCKy+IcdSKZIds+BnLZCpC6zENntnNu32VoL/lIyOluDL6L1JJJVZohC3VjkWUJgdUszTMcEhQSxHkK2y8tK51yzyTMSoLMIxqiVZE6WEUDHy0mT3yfooMzhfHI7hiqrIraFkAljaMvE2wdQw3G247jIyBkZ1/Eea0R0RFYg3AgaUo/o4Iz1QJO2V0kZO2VYdwRWdwrgnRfqNPJMwQRIZNGY4Qc6RoUZJIGWOScCsK45UR2A68ohEzT+jjQIjI5YyZbTrKlpHbGrYtt2GAzuE8fhuWKJrDaFkCyIyM8LHCyAHyz5HcbZAyM7WtJy9y2llkRvldIUL04UAA8z00Us3bc1u6BSlKDC4rxAW6Bum8hZ1RUTTqZ27DLsqj7TWJZcxQy6tzHoXVJ1QEEZDtGysScZDRn6OxBINe+YeFm6jSPUVAmjdirvG+hTk6XjIZT9RFafiXLLDULbQiFIho1vGZGSZ5XBlUFkLGTJkGWyCd85oNzPf2mEneaDA1aJGePA3Ctpcn2kA4rKe/iVljMqB39RSyh5B/lGct9lRfl3liSK5aedY9JeZ0j6slwYWkS3TaSVQT/gyk9sawBtVmHlSdEMAW30SdMNIS3VtUhctGsS6MMAunT4l0NkjV2oJhb3scjMqSIxQ4cKwLI3sYA7HY9/ZWRUY5c4JNBcPIyxIhVgVjd5BK7OGEiq6j0ZfX+SVmUmTOxGTJ6BSlKBSlUJoK1GueuKyW8C9Firs2WKhWkW2jUvOyBgRrCDw5VssVGDnaRhs1rrng8Uk4mlUSER6EV1VkiBbU7LkbM2Ez+7Wgx7nmeCOQoeoQvTLyLGzQxrL/AIbNINsH2jt3OBvVubm63RsES6S0iq/SfpSNFnWFfGDjSR9PlkZNIOWY0t5bYSPplTp521JGAVQA43wuF3z6ozmtbPyy8kyxaphaqZzpZogq9aN1xFpHUyGkJBc+HGB5YDZ8Y5ljtpUjYgAN8s7ZCxRdCaYOCO/+AR9tZ3DOLJOzIFdHQIzJIhSQI+dD4PzToYfWpHlWpuuUY5R8vcSyMzEuxKIXToyQiMBFGkBZnbK4Od8+VbPhfCei7yvM80jqiF30AiKMsUUKiqo3kc5xk5+gYDZ0pUH5k5gmurhuFcObE2B6Tdd47CM+Q/alOCAPL7NgrzNzDcXFweF8NwZdvSbnvHYRt/2abGcL5f7SDlnl2Dh8AggUgZ1O53kmkPeR2+cxpyxy9Dw+3W3hBwN3dt5ZpT60jt5sT/StvQUAqtKUClKUCrc0SupVlDKwIIIBVlOxBB7irlKDnDrJy9IWGqThbtuoy0nDZGOcgdzATnbyz9/Qba4SRFdGDKwDKynKsp7EHzFepoldSrKGVgQVIyrA7EEHuK566S8vyakVpOFu2WUZaThjt3YeZhJO48v9w2/N91NHcRGHCsbacCQxhyjNdWaeflh3JHnj6Ks8Rvp7d/Rpb90i1Am8ZIBKgZWKRMen0lyynDlOwC+sQal1pcJKiyRurowDKykFWU7ggjuKvaaCCycVYO59JMMTyRB7vpIrgC2Uqx6iFULP5spA7DuK0vD+O3McSqk6oNVw8bOqol5I15OGBQxvIw2TwR6W8YOdwK6pimmgg03FL6OJrpZTMxuLyFLYxxiIiIz9DDKofXmJFyWwQe2d68S8X8VsY7l70i5Zm+Rj1RH0K5bpxlEUB8oBpJLDVgnxbzzTTFBC+TeNTy3Bikuo7hWh6uUdGaFwyroOiGPTs3Y6jt3qa1QLVaBSlKCPcycXa2lhIyVKz5QYHUcaBGCx9Uan79hnJ7VasuPzm89DngjVsKdUcrOpDI7D1kU5+TIxW8vLCKXeSNXwrqNQyumQYdSPMEDBFaLhnJ8KdRpUjdpGQ+BWQIIwwQgl2cvpdgX1bg4wBtQYF/zq8cTTrbdSOKMyT6S5aNQTsDo0E6AG3bzGcA5qh5smjLRCMzydW7OCsm0Edw0aIvSibxYXGWwNhk71tuI8H4eWjhlijBkXpJHuoljjBIjKKQHABOAc4rOn4BbSDxQqfE7eYOqQ5k3B7MdyOxPcUbg19nzE7XSwvB0o3yI3djrkkCB2TZSmoESApr1Dpk4wDiR1roOB20cnWSBFcdiBgKcacheynG2QM4JrY0YUFKCgVhcb/wCGm/dSf+BrNoRQcxtbiezhd0hjgdoLLCw5aJoGdUmuyWUL1FDb5XwgKzFgQBeSSW6eIy3HVCR3pQp03VyixAF36KqX+UcaogBjbOdVdH0000HPOHcdufSI4uqqKpt40hfTie3eGNjKqiNpXOS+HDKg0kMPCxrXJzHcRWlu8cyRCOzgk6LdNFvGKBiI06LM4x4MKyYOfoNdQnh1qV1MuRjKnDD6j5V4sbJIIkhjXSkaKiDc6UUYAydzsKDnfHOK3JkhdZTJcJdXBFl010xJHBciB8hdfiHTbdsNq8OKlnLV+8kkqic3EKrEVnKopM7FxLDhFUeELGe2R1MEnFb/ABUH5h5gnu7g8M4aw1gYurseKOxQ7aVI2abvgZ2+/AV5l4/PdzNwvhj4mH/E3OMxWMfmAfnTHyA7b9vKR8t8AhsIBBCu3dmbeSaQ+tI7fOYmnLnAILCAQQLgd2Y7ySyH1ndu7Ma2tApSlApSqUFaUpQKUpQKtzQq6lWAZWBDKRkMp2II8xVylBzWZJOXZC6K8nCnbLoMtJwyRju6ju0JJ3Hl9frdFtbhJEWSNgyMAyspyrKdwQfMV6kjDAqQCCCCCMhgdiCPMVzmWGTl2QyRhpOFyPmSMZaThrt89B86EnuPLP3h0mlWbS6SWNZY3Do4DKynKsp3BBHcVeoFKUoFKUoFKUoFKUoInzR+suG/vZ/5LVLKifNH6x4Z+9n/AJLVLKinjLovfLt9O8lKUq3OUpSgUpSgUpSgUNM1BOYuPzXtw3CuGvhxtdXY3SyTsUU/OmO+3lj68A5l4/PeXDcK4acONrq77x2cZ7op+dMe2PL6wSJNy1y/Bw+3W3gXCjdmO7yyH1ndvNjVeW+AQWFuttAuFG5J3eRz6zu3mxraUClKUClKUClKpQVpSlApSlApSlArxLErKVZQwIwQQCGB7gg9xXulBzeaOXl+YyoGk4VI2ZIxlpOGOx3dB3MOTuB2/wB+hWlykqLLG6ujAMrKcqynsQR3Fe5YwwKsAQQQQRkEHuCPOudTwycvSmSJWk4W7FpYxlpOGux3kQdzDnuvl3+sOkUqzZ3SSoskbh0dQyupBVlIyCCPKr1ApSlApVM1pr7mi2ifpB2llzgxW6NNKp/zCMER/WxAoN1Wo4lzLa21xHbTzrFJKuqMP4VfB04DHbVnyJ3rGTiN9L/h2KxL7bmZQ+Pb04Q//dh9lcl/TJwHiN3eWsQRLiQxvpFvC8aRrr+ezyMPL1jpG3ag6dzP+seGfvZ/5LVtuIcxWsE0dvJOgmlZVSIHMrFjgHSNwPpO1ccteReJ2ps7Z+JmN5DKIlQF0syIyThyc7gYwuMfTWisuRuKWHFrZ5UBzcJi6IaaBmJ2Z8MG39jFT9NTTxl73fRb6d5fSoqtaBpuIxgZhtrj2mN3gc/Uj6x9715TmyJMC6hmtD7Z0+RH/wC8ZaIfawqngkNKtwzK4DKwZSMhlIKke0Ed6uUClKUClDUE5j49Pe3DcL4awBG13djdbND3RD2Mx/7fXuAcx8envZ24Xw18OMelXY3SzQ90U/OmOCNu30bkSflzgMFhAtvAuFG7Md3lc+s7t85j7acucAg4fbrbW66UG5J3eRz3dm82PtraUClKUClKUClKUCqVWlApSlApSlApSlApSlArXcc4rbWsRkupY448EHqEAOD3UA+t9QrOkIxucbHf2fTXy/z7y7dy3Ynjkmu4JpRDb3Mm/UcnGgexdRIDABWxkZoJ7yzzGLBprqzjmk4MZtDagdVnMd3lhTubfdcg7g52236/Z3SSxrLG4dHUMrKcqyncEHzFa3lnl+OysorJQCqR6WyBiRm/xGI88kk/bUQnt5OXpWniDScLdiZYVyz8OkY7yxjuYcndR2oJhzHzFb2CRvcSaFklWJT5Bm8z7FGNz5V54nzAkTiCNWnnIDCGLBZUPaR2J0xp9LHfyBrjf6VzdcbvI4rCF7i3hQYkjHyDTSbueocKcDQO+xDVPf0P8F4hY2zW97DGgzqRldWn37rIVyGxtg5JA27YoN6eBz3XivZzp2Po1uzpAPoeUYeb7dKn9mt5Y2UUCCOGNI0GwVFCqB9AG1ZFKBVMVWlBE+aP1jwz97P/ACWqWYqJ8z/rHhn72f8AktUsqKeMui96LfTvJVCoO2P6VWlW50fn5XRWMto7WkhJJ6X/AA8hJyTJbnwNv3Iw258Qqi8ee3cR30YiBIVbhCTZyMTgBid4XJ8m2yQAxNSGtPzWtybSVbNI3mZSqiUgRjOxJBBDbdgdie+1Ai5it3vW4esgM6RdVlHZVzjGf2twcewj21uK+X+CcA4rwa/gvJbKbSkg6jIOqrQt4ZATGW+aT388V2DjPMkvE5f7P4VLtgG5vVGY7aJhnRG3ZpSCO3bfzB0ha525ouJzPYcNVmaJC13cJj/28Y3aKI9mnIBwPL257Z/6M+M8Ke2W34fKoxu0b+G5Zz6zuDuzZ8xkVIuXuAwWFuttAmlF753eRz3dj85j7a+dueOQ7iLjL21lC79TNzAEIXQhOW8WwXSwIG/7PtFB9O0qO8h6fQYgLuS6wCGllz1eoDhkZSNSEEEaW3GN6kVApSlApSlApSlApSlApSlBH+d7ww2yuJjCDPbI8gKroieZVfxMCB4SRmtfwjjZT0uVZ2urWGNGSZmiXMw6nXiWY6I3RQsZ1E4BZhk4wJBxrhvpKImrTpmhlzjOelIr6ft04rWcS5WErS6JTGsrRSlAoZVvIZFdJgD7dChl7NpHY5yGFHz2h6idIPKkBuBHFKsmu3VlEhGAGDgMCAVw3zSdyNlxXmqGAx4BkV4mmJTfEIAEZH7TPI6Iq5GSxPkatQcInF0t9c3EbGKGaMLFCyLokKMWJLuxPyXatZyxyykljJrDp6ThowcCWztVYvaRKCPDozrCkHDMRQb2w42zTi2nt2hkaMyx+NXSRFIDrqXs660yO3i2LYNbdmwMnt3+gCtPYcIk663NxOJXSNoowsfTjRXKmRiuo5clE3zgAbAZNZHG+ELdxiGR3EeoGRFOBOgz8k576CcEgYzjHYkENG7HizFBkcPGzOCQ3EWz6qkdrbbdv/s7Dw51ShbdQoUKulcaVwNK6fVwPLHlXqNAoCgAAAAADAAGwAHkKuUCvEsYYFWAIIwQRkEHuCD3Fe6UHN7i2l5flM0KtJwt21TQjLScOY95Yx3MWd2Xy710Gyu45o1lidXRwGV1IKsp7EEVddARggEHYg9iD5YrnN1bScvSGeBWk4ZI2qaFcs/D3PeaMecXtXy70HSKVYsruOaNZYnDo4DK6nKsp7EGr9ApSlBE+aP1jw397P8AyWqWVFOaP1jwz97P/JapXUU8ZdF70W+neSlKVbnKoTQmoBzBxufiVw/CuHOVVdry8G626HvFEfnSntny3+sBXmDjc/EbhuGcNfSq7Xd6u62ynYxRkd5jv57feRK+XOAQcPgW3t00oNye7yOe7s3mxr1y9wOCwt1trdAqL9rO3mzHzY+2tlQKtmIZ1YGcYzgatPfGfZVylBGuMcMlt5GvbJdTnBuLfOFvFAxqXOyzgdm+cBpbyK7jhPE47mJZYm1Kcgg7PG42ZHU7q4OxU7g1mZrWQ8Fjjumu4yyNIumVFI6U7DGiRl/bABGoYyDg5wMBtKjXOt6YvRQbk28b3OiWQMifJ9GRgNbggeJVqSZrX8U4Z15LeTXp6E3VxjOv5N49P0f4mfsoI9wzmJore4uHkM9ukqLbzu0UXXjYKGYyNpRkDswD7agNgdibkHPUR1hkXMTwifRIHSKGclVmzgHAYeIMFIHi7YJv3HKZ1MYp9Ci4W6gQoGjgudLrL4cjVG3UZtOxDMxBG2LNxwtofSr68dZ9dqIXihhZVaOMyNpCl2ZmPVI3NBncU5oSCZ4RE0jIseQhGpriZtMMAztqIDMSSAqgE7HNZXDOLmSZ7eWExTIqyadQdJIXJAdHGM+JSCCAQceRBOn4TyqRYRwySstxqjnaYENIl0oGncgB1CgR7jxKDnc1t+GcJdJnuZpRJKyLGCqaI44kJYKqZJyWYkkk527ACg21KUoFKUoNLzfxCS2tGliIDCS3XJGRpkuI422P+VzWGOcoiJX6M4ihmeCWYoohjeNyjt62oxgjJcAhR3xg42PM3DDd25gVgpLwvkjIxFMkpGB7QhH21r25df0C8s+ouq4N8VbB0p6W8jLkfR1d/qoM2PjoeVo44JpFWQRvKir0kk2yN2DMBncqCAdu4OMS05hAVUOueWSa5VESNUcpDKVYkF9IRfCussNRI2y2K82/BrqDXFbzxJC8rS5ZGaaEyNrmVRnS2WLEE+rq7NVqHl2aFkmhlj6qtdZVwejLDcTdbSSPErKQuGGfnbHIICxwbmos0+tJmY3bQwwaFE6hIkZwQSAFBLEsTjxDBOVzmvzjCOmoimaR5nt+iqL1UnSPqFW8WANGG1AlcEHOK1B5LmctNNJBLN6RJMFZGFs8csaIYmXJK4MS4YZ9XcHJFbG05ZdZbaUmBOjPLKY4ItCaZLZoQgPdiC2osQM9sCgt8X5mcqghhlEi3cMU0Z6SyIGIIU6mwQytsykj6RWddc0xx9QmKUpDgTyqqmKBtIZlJ1ZcqCNWgNj68ivF7y+0lw8wkUBpbOTGDnFsWLD6zqrAu+Um68zxrauJnL6riIySWzMAH0L2kUkFgCRgk7kYACYIwIBByCAQR2IPnXqvMSaVA9gA7YG30DtXqgV5dQQQRkHYg9iPZivVKDnF1ay8vytcQK0nDHbM0C5L8PZjvNEPOLJ3Xyqf2F4k8ayxOro6hldTlWU9iKvOgIIIyCMEHcEVzu7tZOAStcQK0nDHbVPAuWfh7nvNEv8AyvNl8u9B0alY9jeRzxrLE6vG4DK6nKsp8wayKCKc0frHhn72f+S1SuopzR+seGfvZ/5LVK6injLovei307yVQmhNc/4/xufiVw3DOGyaFQ4vLwbrAp7wxH50pxjI7feRbnOPcbn4nO/C+HSFFU6by9X1bdfOGIj1pTuCR2wfsl/L3A4LG3S2t00ov8Tse7sfNj7acv8AA4LGBbe3TSij62dvN2Pmx75rZUClKUClKUEAg5huAglFyskjXskC2hSPVJCt0YSU0eMFYxrLHI8JzgbiQXnNMUZlPTlaOFtM06qOhC2MtklgzaQQWKghfPcEDCi5TMcWY3RblLieeOYLgYllZzFJ5shRyh+wjBAxYn5OImmaNLVlmdpNdxEZJbd5N30r6sg1ZYA4wSe4wAGNf8yXOu9ZdaJBLbwx5SIxHWbdmctqLFiJ2wO2nBO/be3XNcMfUYpKYYpOnLcBR0IpM4YE51MFOzMqkKc5PhbGNf8ALbvFeqjqDcTQTR5BCoYY4ECtjyJt/LsG+isKTlApJK0a2hSSR5TJPEZJoC7a5FAPhcZLFScacjZgKDa/28E9LZi0iwzJHpVETphoI3xrZ9JXx6i7FcZx5ZNu15yt5I2caiytEvTQpI8hmOIumY2ZXBIYZBwNDZxg1pLLhvpz3FzBJG6DiCTwlhrtLoJaRwnOO4DBsMM4ZAd8YrKXlOd55rtmt4pnNq8YiRmjSS3aTPULaTLqWUqSApAx7AaC5/eopeTLKk0apBBiFkUyPPLK6J0yhIcthVGGwMHOMGt7wvjAmkeFo3ilQKzRyBdXTfIV1ZCVZSVYbHYg5rQz8tXc873MtxCkmiDoCNGZIJYXdvFqIMisHIPqnBOMd63HC+GSi4e6uHRpGjWJVjVhHHEpLHdiSzFmyTtgBRjuSG6pSlApSlApSlApSlApSlApSlApSlApSlAry6ggggEHYg9iD5Yr1Sg5zeWsnL8rXFujScMdtU9uu7cPYneeIf8AK82Xy79u0sn5qso/Rs3Kf+6YLb4OesW7EY7DcDJ8yB3NZnGppI7eR4oOvIEOiHUq9VvJSzbAV8f8YW4huWEsTW8iuXWPSyCElywEan1VB7Y9lB9R8z/rHhv72f8AktUrrmXCOYhxI8Huvnl51kH7MyQsH+zO4+githx3jM3Ep34Xw9yiqdN5eL2gU94Yj86UjbPzc+3tFPGXRe9Fvp3l55g4zPxK4bhnDn0IvhvLxc4gB7wxHsZSPMdv9pby/wADgsLdba3jCRr/ABM3mzHzY+Zr1wLg0NlAltAmlEGw7lie7MfNidya2FW5ylKUClKUClKUClKUClKUFAKrSlApSlApSlBzOT9JswYgWUeASBmZgSAcAkdPag/SbP7lH/rt8KoTIPE3/U3+5qoFfRWtW2KrdNU4+cZuCb1eM+abf+pc/uUX+u3wqr/6kz+5Rf67fCqGKK9qKqdWaPz+7N9XmmQ/SPce5Rf67fCqo/SLce5Rf67/AAqiCiriionVtjn9276vNLR+kO49yi/13+FVR+kG59yi/EP8Koqoq4BUzq6x/pbva80oHP1z7nD+If4VVHPlz7nD+If4VRpRVxRUzq+y3e15pEOerr3KH8Q/wq9Dni69zh/EP8GtAoq4oqJ0Gy3e15t4Odrv3OH8Q/wa9DnO79zg/EP8GtIorWcZiLTW6iGOXafwStpj2Vd86H3+yvOvRLVMYqi5VPumH98bv3OD8Q/waqOcLz3OD8Q/wai1wJIokEMKISw6ixhX6akeJkQmPqb6Qe2xJwcAVZsr+4nkWNJIVAiLSP03JEokZNIiZlKHYZVj4e2+Qa8psWonDCVbVWaYf3tvPc4PxD/BrD4vxB71Onc8MtZV9jzsSufMHo5U/SMVGm47ISkIAST5fqMsMtwvyEgiOiKM53Jzlj4RtuTV6birxrFNcQFWRL1yMFWZIYtQdFJ8IZfJskfZmom1Z5txraM8m3MLN6E/o6MSyr12cwsy6XKuYwRlfDnc1P8AgN7LZQJbW9hbpGowB6S+WbzYnoeJj3JrVwXFxG8HWaJlnJXEalTDJ03lGGLHqJpjZc4Bzg9jgWeNohvIA9sbgdC4IQLGxDa4QG+UZQNiRnOfEancW4xmMXpVerqimmfb9pT/AHlvfc7f8S/wKr/eO+90t/xMnwKh9oDbTxtOwUJZX8hyzOsEPpULohbu2lCq7fs7VdXjV1E6LPE2JUm0loViEcscLzL6s7nGI8aWAO+c7EVOxbjin+WaWf3gvvdLb8TJ8Cqjj9/7pbfiZPgVHrDiNyqW085iZJ+mGSNGV4GkjLoQ5ciTcaSMD1tu2Dds+JXBS3uXMRinaIdJVIkhWf8AwiJdREhBK6hpHc47b5NFBjU3w47f+6W34mT4FVHG7/3S2/EyfAq6oq4BWzZpNqWOOM8Q90tvxMnwKqOL8Q90tfxUnwKywK9gVM2qW4ywv7V4j7pa/ipPgVX+1OI+6Wv4qT4FZ4FewKndw3GWu/tPiPudr+Kk+BVf7S4l7na/ipPgVswK9gVOxDcWq/tHiXudr+Kk+BT0/iXudr+Kk+BW4Ar0KzZhuLTC+4l7na/ipPgVX03iXudr+Kk+BW7Ar0BU4DRemcT9ztfxT/AqB8Q/TT0JpIHsfHG7xtplJXWjFWwdAyMg11sCvknnAf8AyN5t/wD1XH81qxqbyesw0sMMw3Vs5DEeygf6G/gf+lfQNK/Uo1rcppinZjy6uadGiZ4uAiQexv4H/pXsSj/N/A/9K73St+LXPpj8nhozcIEy/wCb+B/y17E6/wCb+B/y13SlZ8UufTH5b4eM3DluE9p/gf8ALVwXKe0/wP8AlrttKn4ncyg8PGbiou09p/hf8tXBeR/tH+F/y12alTOsbmUN3EZuOLfR/tH+B/y17F/F+2f4H/LXYKVM6fcyg3HNyIcRi/bP8D/lq3PNbyFWMjgrq0leqjDUMN2Hbauw0qZ02ueMQ2LOHu48fRjpJlkLKSVfVN1V1ABgGG+k6Rt28/ZWPHZ2qzdQSFQI9IZWnWXqNIzyszAZbOVJyTuPoFdppUTpOP8AWFRb5uSYs9KKrlOnnQydVXTV63iAyc9znOTv3qzDJAs8YXCxRicszlnaeSdVDbbsfnai+PLGRXYaVk6RM+0EUc3KrH0KJlKOcqCsYZpnWJD3VFbIUdht5bdqzXvLXqrIz4dVZBkSDCOVLDGn2xr91dIpTxE5G75ua3FxZStrd1Y9OSIgh9Lwy6daMMYIOhfuqx07ElGa4kfphwgeWdggdGjbAPc6XIycn6a6jSpm9jxhuxzc8F7ZaIk6o0xGNox8p4TEMJvjf7atWx4fG6ssnqMzRoWmMMLtkFkiPhU4LdhtqOMZrpFKybuPs3ZQscetf+ev3P8Alr2OP2v/AD1+5/y1MaU30s2ERHMFr7wv3P8Alr2OYbT3hfuf8tSulZvJbsosOYrT3hfuf8texzHZ+8p9z/lqTUrNuW4I2OY7P3lPuf8ALXocy2fvK/c39KkVKzakwR8czWfvKfc39K9Dmiy95T7m/pW+pWYyYNEOabL3lfub+lV/vVZe8r9zf0reUrGtKOarL3lfub+lfNXMvDbiW9uZY7eVke4mdGEbYZGkJU74PYivq+lB/9k=">
+    <p>Ejemplos y aplicaciones:</p>
+    <ul>
+      <li><strong>Espejos:</strong> Nos devuelven nuestra imagen reflejada gracias a su superficie pulida.</li>
+      <li><strong>Telescopios reflectores:</strong> Usan <em>espejos curvos</em> que reflejan la luz de estrellas lejanas hacia un punto de enfoque. Sin reflexión, no podríamos concentrar ni analizar la luz de cuerpos celestes.</li>
+      <li><strong>Fibras ópticas:</strong> Usan reflexión interna total para guiar la luz a través de cables en telecomunicaciones y medicina.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Refracción de la Luz</h2>
+    <p>La <strong>refracción</strong> ocurre cuando la luz pasa de un medio a otro (como del aire al agua) y <strong>cambia de dirección</strong> debido al cambio en su velocidad.</p>
+    <p>Por ejemplo, si metes un lápiz en un vaso con agua, parece que se dobla. Esto sucede porque la luz se desvía.</p>
+ <img src="data:image/jpeg;base64,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">
+<p>Ejemplos y aplicaciones:</p>
+    <ul>
+      <li><strong>Anteojos y lentes:</strong> El lente tiene una forma curva que guía la luz para que el rayo llegue justo a la retina. Corrige el camino de la luz cuando el ojo no enfoca bien.</li>
+      <li><strong>Cámaras fotográficas:</strong> Usan lentes que refractan la luz para enfocar imágenes claras en sensores.</li>
+      <li><strong>Microscopios:</strong> Amplifican objetos pequeños gracias a lentes que refractan la luz.</li>
+      <li><strong>Prismas y arcoíris:</strong> Separan la luz blanca en colores gracias a la refracción y dispersión.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Comparación de Usos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Uso</th>
+          <th>Fenómeno</th>
+          <th>Aplicación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Espejo de baño</td>
+          <td>Reflexión</td>
+          <td>La luz rebota y nos muestra nuestra imagen.</td>
+        </tr>
+        <tr>
+          <td>Telescopios</td>
+          <td>Reflexión</td>
+          <td>Espejos curvos reflejan luz estelar hacia un punto de análisis.</td>
+        </tr>
+        <tr>
+          <td>Internet por fibra óptica</td>
+          <td>Reflexión</td>
+          <td>La luz rebota dentro del cable, guiando datos a gran velocidad.</td>
+        </tr>
+        <tr>
+          <td>Anteojos o lentes</td>
+          <td>Refracción</td>
+          <td>La luz se curva para enfocar bien la imagen en la retina.</td>
+        </tr>
+        <tr>
+          <td>Microscopio</td>
+          <td>Refracción</td>
+          <td>Amplía objetos pequeños redirigiendo la luz.</td>
+        </tr>
+        <tr>
+          <td>Prisma o arcoíris</td>
+          <td>Refracción</td>
+          <td>Descompone la luz en diferentes colores por dispersión.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Conclusión</h2>
+    <p>La luz, como forma de energía, nos permite ver el mundo. Gracias a la <strong>reflexión</strong> podemos observar nuestro entorno y explorar el universo. Gracias a la <strong>refracción</strong> podemos enfocar, ampliar y analizar la realidad. Estos fenómenos no son solo físicos: son esenciales en nuestra vida diaria, la ciencia, la medicina y la tecnología moderna.</p>
+  </div>
+</body>
+</html>
